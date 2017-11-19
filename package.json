@@ -1,8 +1,7 @@
 {
   "name": "hinagata-nuxt",
   "version": "1.0.0",
-  "description": "Nuxt.js project",
-  "author": "nobii <fujisawa-shin@kayac.com>",
+  "description": "hinagata-nuxt project",
   "private": true,
   "scripts": {
     "dev": "nuxt",
