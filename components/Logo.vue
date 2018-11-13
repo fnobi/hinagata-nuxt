@@ -1,12 +1,12 @@
 <template lang="pug">
 .VueToNuxtLogo
-  .Triangle.Triangle--two
-  .Triangle.Triangle--one
-  .Triangle.Triangle--three
-  .Triangle.Triangle--four
+  .Triangle--two
+  .Triangle--one
+  .Triangle--three
+  .Triangle--four
 </template>
 
-<style>
+<style lang="scss">
 .VueToNuxtLogo {
   display: inline-block;
   animation: turn 2s linear forwards 1s;
@@ -26,12 +26,14 @@
 }
 
 .Triangle--one {
+  @extend .Triangle;
   border-left: 105px solid transparent;
   border-right: 105px solid transparent;
   border-bottom: 180px solid #41b883;
 }
 
 .Triangle--two {
+  @extend .Triangle;
   top: 30px;
   left: 35px;
   animation: goright 0.5s linear forwards 3.5s;
@@ -41,6 +43,7 @@
 }
 
 .Triangle--three {
+  @extend .Triangle;
   top: 60px;
   left: 35px;
   animation: goright 0.5s linear forwards 3.5s;
@@ -50,6 +53,7 @@
 }
 
 .Triangle--four {
+  @extend .Triangle;
   top: 120px;
   left: 70px;
   animation: godown 0.5s linear forwards 3s;

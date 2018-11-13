@@ -1,28 +1,20 @@
 <template lang="pug">
-.top
-  logo
-  h1 hinagata-nuxt top page
+.about
+  h1 about hinagata-nuxt
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue';
-
-export default {
-  components: {
-    Logo,
-  },
-};
+export default {};
 </script>
 
 <style lang="scss">
-.top {
+.about {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
