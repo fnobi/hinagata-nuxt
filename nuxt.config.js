@@ -4,6 +4,8 @@ const DESCRIPTION = 'Nuxt.js project';
 const SHARE_IMAGE_URL = `${URL}ogp.png`;
 
 module.exports = {
+  mode: 'spa',
+
   /*
   ** Headers of the page
   */
@@ -28,25 +30,42 @@ module.exports = {
     ]
   },
   /*
-  ** Customize the progress bar color
+  ** Plugins to load before mounting the App
   */
-  loading: { color: '#3B8070' },
+  plugins: [
+  ],
+
+  /*
+  ** Nuxt.js modules
+  */
+  modules: [
+    // Doc: https://github.com/nuxt-community/axios-module#usage
+    '@nuxtjs/axios'
+  ],
+  /*
+  ** Axios module configuration
+  */
+  axios: {
+    // See https://github.com/nuxt-community/axios-module#options
+  },
+
   /*
   ** Build configuration
   */
   build: {
     /*
-    ** Run ESLint on save
+    ** You can extend webpack config here
     */
-    extend (config, ctx) {
-      if (ctx.dev && ctx.isClient) {
+    extend(config, ctx) {
+      // Run ESLint on save
+      if (ctx.isDev && ctx.isClient) {
         config.module.rules.push({
           enforce: 'pre',
           test: /\.(js|vue)$/,
           loader: 'eslint-loader',
           exclude: /(node_modules)/
-        });
+        })
       }
     }
   }
-};
+}
