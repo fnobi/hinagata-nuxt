@@ -1,25 +1,12 @@
-<template>
-  <section class="container">
-    <div>
-      <logo/>
-      <h1 class="title">
-        hinagata-nuxt
-      </h1>
-      <h2 class="subtitle">
-        My grand Nuxt.js project
-      </h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green">Documentation</a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey">GitHub</a>
-      </div>
-    </div>
-  </section>
+<template lang="pug">
+.container
+  div
+    logo
+    h1.title hinagata-nuxt
+    h2.subtitle My grand Nuxt.js project
+    .links
+      a.button--green(href="https://nuxtjs.org/" target="_blank") Documentation
+      a.button--grey(href="https://github.com/nuxt/nuxt.js" target="_blank") GitHub
 </template>
 
 <script>
