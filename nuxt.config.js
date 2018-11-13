@@ -22,25 +22,24 @@ module.exports = {
       { property: 'twitter:card', content: 'summary_large_image' },
       { property: 'twitter:image', content: SHARE_IMAGE_URL },
       { property: 'twitter:title', content: TITLE },
-      { property: 'twitter:description', content: DESCRIPTION }
+      { property: 'twitter:description', content: DESCRIPTION },
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'canonical', href: URL }
-    ]
+      { rel: 'canonical', href: URL },
+    ],
   },
   /*
   ** Plugins to load before mounting the App
   */
-  plugins: [
-  ],
+  plugins: [],
 
   /*
   ** Nuxt.js modules
   */
   modules: [
     // Doc: https://github.com/nuxt-community/axios-module#usage
-    '@nuxtjs/axios'
+    '@nuxtjs/axios',
   ],
   /*
   ** Axios module configuration
@@ -63,9 +62,9 @@ module.exports = {
           enforce: 'pre',
           test: /\.(js|vue)$/,
           loader: 'eslint-loader',
-          exclude: /(node_modules)/
-        })
+          exclude: /(node_modules)/,
+        });
       }
-    }
-  }
-}
+    },
+  },
+};
