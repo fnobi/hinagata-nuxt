@@ -5,10 +5,6 @@ const SHARE_IMAGE_URL = `${URL}ogp.png`;
 
 module.exports = {
   mode: 'spa',
-
-  /*
-  ** Headers of the page
-  */
   head: {
     title: TITLE,
     meta: [
@@ -29,32 +25,16 @@ module.exports = {
       { rel: 'canonical', href: URL },
     ],
   },
-  /*
-  ** Plugins to load before mounting the App
-  */
   plugins: [],
-
-  /*
-  ** Nuxt.js modules
-  */
   modules: [
     // Doc: https://github.com/nuxt-community/axios-module#usage
     '@nuxtjs/axios',
   ],
-  /*
-  ** Axios module configuration
-  */
+  css: ['@/assets/scss/common.scss'],
   axios: {
     // See https://github.com/nuxt-community/axios-module#options
   },
-
-  /*
-  ** Build configuration
-  */
   build: {
-    /*
-    ** You can extend webpack config here
-    */
     extend(config, ctx) {
       // Run ESLint on save
       if (ctx.isDev && ctx.isClient) {
