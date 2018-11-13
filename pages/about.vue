@@ -4,10 +4,12 @@
 </template>
 
 <script>
-export default {};
+export default {
+  name: 'about',
+};
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .about {
   position: fixed;
   top: 0;

@@ -1,20 +1,21 @@
 <template lang="pug">
 .top
   logo
-  h1 hinagata-nuxt top page
+  h1.top__title hinagata-nuxt top page
 </template>
 
 <script>
 import Logo from '~/components/Logo.vue';
 
 export default {
+  name: 'top',
   components: {
     Logo,
   },
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .top {
   position: fixed;
   top: 0;
@@ -26,5 +27,9 @@ export default {
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+.top__title {
+  margin-top: 1em;
 }
 </style>
