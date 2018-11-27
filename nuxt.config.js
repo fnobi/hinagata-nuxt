@@ -11,6 +11,7 @@ module.exports = {
   css: ['@/assets/scss/common.scss'],
   axios: {
     // See https://github.com/nuxt-community/axios-module#options
+    baseURL: '/',
   },
   build: {
     extend(config, ctx) {
