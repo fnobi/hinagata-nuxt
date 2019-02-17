@@ -1,4 +1,4 @@
-const URL = 'http://hinagata-nuxt.example.com/';
+const URL = 'https://hinagata-nuxt.example.com/';
 const TITLE = 'hinagata-nuxt';
 const DESCRIPTION = 'Nuxt.js project';
 const SHARE_IMAGE_URL = `${URL}ogp.png`;
