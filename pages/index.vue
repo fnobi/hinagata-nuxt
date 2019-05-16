@@ -5,14 +5,14 @@
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue';
+import Logo from '~/components/Logo.vue'
 
 export default {
   name: 'top',
   components: {
-    Logo,
-  },
-};
+    Logo
+  }
+}
 </script>
 
 <style lang="scss" scoped>

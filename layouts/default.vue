@@ -5,14 +5,14 @@
 </template>
 
 <script>
-import GNav from '~/components/GNav.vue';
+import GNav from '~/components/GNav.vue'
 
 export default {
   name: 'app',
   components: {
-    GNav,
-  },
-};
+    GNav
+  }
+}
 </script>
 
 <style lang="scss">
