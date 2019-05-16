@@ -5,16 +5,13 @@ module.exports = {
     node: true,
   },
   parserOptions: {
-    parser: 'babel-eslint',
+    parser: 'babel-eslint'
   },
-  extends: ['plugin:vue/recommended', 'airbnb-base'],
-  // required to lint *.vue files
-  plugins: ['vue'],
-  settings: {
-    'import/resolver': {
-      nuxt: {},
-    },
-  },
+  extends: [
+    '@nuxtjs',
+    'plugin:nuxt/recommended'
+  ],
+  plugins: [],
   // add your custom rules here
   rules: {
     quotes: ['error', 'single'],
