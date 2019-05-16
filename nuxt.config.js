@@ -1,12 +1,12 @@
 const { HEAD } = require('./const');
 
-module.exports = {
+export default {
   mode: 'spa',
   head: HEAD,
   plugins: [],
   modules: [
-    // Doc: https://github.com/nuxt-community/axios-module#usage
-    '@nuxtjs/axios',
+    // Doc: https://axios.nuxtjs.org/usage
+    '@nuxtjs/axios'
   ],
   css: ['@/assets/scss/common.scss'],
   axios: {
@@ -26,4 +26,4 @@ module.exports = {
       }
     },
   },
-};
+}

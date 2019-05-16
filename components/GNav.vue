@@ -34,6 +34,6 @@ nav.g-nav
 
 <script>
 export default {
-  name: 'g-nav',
-};
+  name: 'g-nav'
+}
 </script>
