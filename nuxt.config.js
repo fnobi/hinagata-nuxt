@@ -1,4 +1,4 @@
-const { HEAD } = require('./const');
+import { HEAD } from './const'
 
 export default {
   mode: 'spa',
@@ -11,7 +11,7 @@ export default {
   css: ['@/assets/scss/common.scss'],
   axios: {
     // See https://github.com/nuxt-community/axios-module#options
-    baseURL: '/',
+    baseURL: '/'
   },
   build: {
     extend(config, ctx) {
@@ -21,9 +21,9 @@ export default {
           enforce: 'pre',
           test: /\.(js|vue)$/,
           loader: 'eslint-loader',
-          exclude: /(node_modules)/,
-        });
+          exclude: /(node_modules)/
+        })
       }
-    },
-  },
+    }
+  }
 }

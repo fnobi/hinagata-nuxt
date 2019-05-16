@@ -1,7 +1,7 @@
-const URL = 'https://hinagata-nuxt.example.com/';
-const TITLE = 'hinagata-nuxt';
-const DESCRIPTION = 'Nuxt.js project';
-const SHARE_IMAGE_URL = `${URL}ogp.png`;
+const URL = 'https://hinagata-nuxt.example.com/'
+const TITLE = 'hinagata-nuxt'
+const DESCRIPTION = 'Nuxt.js project'
+const SHARE_IMAGE_URL = `${URL}ogp.png`
 
 module.exports = {
   URL,
@@ -21,11 +21,11 @@ module.exports = {
       { property: 'twitter:card', content: 'summary_large_image' },
       { property: 'twitter:image', content: SHARE_IMAGE_URL },
       { property: 'twitter:title', content: TITLE },
-      { property: 'twitter:description', content: DESCRIPTION },
+      { property: 'twitter:description', content: DESCRIPTION }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'canonical', href: URL },
-    ],
-  },
-};
+      { rel: 'canonical', href: URL }
+    ]
+  }
+}
