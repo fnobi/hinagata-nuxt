@@ -5,12 +5,13 @@ export default {
   head: HEAD,
   plugins: [],
   modules: [
-    // Doc: https://axios.nuxtjs.org/usage
-    '@nuxtjs/axios'
+    '@nuxtjs/axios',
+    ['@nuxtjs/google-analytics', {
+      id: 'UA-XXXXXXXXX-X'
+    }]
   ],
   css: ['@/assets/scss/common.scss'],
   axios: {
-    // See https://github.com/nuxt-community/axios-module#options
     baseURL: '/'
   },
   build: {
