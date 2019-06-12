@@ -1,7 +1,6 @@
 import { HEAD, BASE_PATH } from './const'
 
 export default {
-  mode: 'spa',
   head: HEAD,
   plugins: [],
   modules: [
