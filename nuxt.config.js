@@ -1,4 +1,4 @@
-import { HEAD } from './const'
+import { HEAD, BASE_PATH } from './const'
 
 export default {
   mode: 'spa',
@@ -11,8 +11,14 @@ export default {
     }]
   ],
   css: ['@/assets/scss/common.scss'],
+  router: {
+    base: BASE_PATH
+  },
   axios: {
-    baseURL: '/'
+    baseURL: BASE_PATH
+  },
+  generate: {
+    dir: `../public${BASE_PATH}`
   },
   build: {
     extend(config, ctx) {

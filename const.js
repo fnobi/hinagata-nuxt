@@ -1,6 +1,8 @@
-const URL = 'https://hinagata-nuxt.example.com/'
 const TITLE = 'hinagata-nuxt'
 const DESCRIPTION = 'Nuxt.js project'
+const KEYWORDS = 'nuxt, javascript'
+const BASE_PATH = '/'
+const URL = `https://hinagata-nuxt.example.com${BASE_PATH}`
 const SHARE_IMAGE_URL = `${URL}ogp.png`
 
 module.exports = {
@@ -8,12 +10,14 @@ module.exports = {
   TITLE,
   DESCRIPTION,
   SHARE_IMAGE_URL,
+  BASE_PATH,
   HEAD: {
     title: TITLE,
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: DESCRIPTION },
+      { name: 'keywords', content: KEYWORDS },
       { property: 'og:url', content: URL },
       { property: 'og:image', content: SHARE_IMAGE_URL },
       { property: 'og:title', content: TITLE },
