@@ -17,7 +17,7 @@ export default {
     baseURL: BASE_PATH
   },
   generate: {
-    dir: `../public${BASE_PATH}`
+    dir: `public${BASE_PATH}`
   },
   build: {
     extend(config, ctx) {
