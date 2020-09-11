@@ -2,7 +2,7 @@ const TITLE = 'hinagata-nuxt'
 const DESCRIPTION = 'Nuxt.js project'
 const KEYWORDS = 'nuxt, javascript'
 const BASE_PATH = '/'
-const URL = `https://hinagata-nuxt.example.com${BASE_PATH}`
+const URL = `${process.env.SITE_ORIGIN || 'https://example.com'}${BASE_PATH}`
 const SHARE_IMAGE_URL = `${URL}ogp.png`
 
 module.exports = {
